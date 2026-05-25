@@ -20,3 +20,8 @@ variable "ssh_key" {
   description = "SSH KEY FOR EC2"
   default     = "~/.ssh/id_rsa.pub"
 }
+
+variable "ami" {
+  description = "ami image id"
+  default     = "ami-07a00cf47dbbc844c"
+}
