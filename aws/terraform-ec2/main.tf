@@ -49,8 +49,13 @@ resource "aws_instance" "my_simple_ec2" {
   key_name               = aws_key_pair.deployer.key_name
   vpc_security_group_ids = [aws_security_group.web_traffic.id]
 
+  root_block_device {
+    volume_size           = var.root_volume_size
+    volume_type           = "gp3"
+    delete_on_termination = true
+  }
+
   tags = {
     Name = var.instance_name
   }
 }
-
