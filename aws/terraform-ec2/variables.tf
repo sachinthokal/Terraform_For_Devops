@@ -26,3 +26,9 @@ variable "ami_id" {
   type        = string
   default     = "ami-07a00cf47dbbc844c"
 }
+
+variable "root_volume_size" {
+  description = "Size of the root volume in GB"
+  type        = number
+  default     = 8 # Default size 8GB jri nhi dili tri chalel
+}
