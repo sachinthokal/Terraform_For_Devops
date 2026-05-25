@@ -1,3 +1,9 @@
+variable "aks_cluster_name" {
+  description = "Name of the AKS Cluster"
+  type        = string
+  default     = "terraform-aks-cluster"
+}
+
 variable "resource_group_name" {
   description = "Name of the Resource Group"
   type        = string
@@ -10,14 +16,8 @@ variable "location" {
   default     = "Central US"
 }
 
-variable "aks_cluster_name" {
-  description = "Name of the AKS Cluster"
+variable "vm_size" {
+  description = "AKS Cluster Vm Size"
   type        = string
-  default     = "terraform-aks-cluster"
-}
-
-variable "aks_dns_prefix" {
-  description = "DNS prefix for the AKS Cluster"
-  type        = string
-  default     = "terraform-aks"
+  default     = "Standard_D2PS_v6"
 }
