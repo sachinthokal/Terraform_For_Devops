@@ -6,6 +6,9 @@ on:
       - main
     paths-ignore:
       - *.md
+  
+env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   gitleaks:
