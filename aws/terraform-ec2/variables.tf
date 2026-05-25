@@ -21,7 +21,7 @@ variable "ssh_key" {
   default     = "~/.ssh/id_rsa.pub"
 }
 
-variable "ami" {
+variable "ami_id" {
   description = "ami image id"
   type        = string
   default     = "ami-07a00cf47dbbc844c"
