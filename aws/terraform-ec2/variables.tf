@@ -23,5 +23,6 @@ variable "ssh_key" {
 
 variable "ami" {
   description = "ami image id"
+  type        = string
   default     = "ami-07a00cf47dbbc844c"
 }
