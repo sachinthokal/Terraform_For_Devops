@@ -44,7 +44,7 @@ resource "aws_security_group" "web_traffic" {
 
 # 3. EC2 Instance
 resource "aws_instance" "my_simple_ec2" {
-  ami                    = "ami-0c7217cdde317cfec" # Ubuntu 22.04 LTS
+  ami                    = var.ami # Ubuntu 22.04 LTS
   instance_type          = var.instance_type
   key_name               = aws_key_pair.deployer.key_name
   vpc_security_group_ids = [aws_security_group.web_traffic.id]
