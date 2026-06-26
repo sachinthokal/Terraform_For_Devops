@@ -11,10 +11,12 @@ variable "cluster_ports" {
     protocol       = string
   }))
   default = [
-    { container_port = 30080, host_port = 8080, protocol = "TCP" },
     { container_port = 30081, host_port = 8081, protocol = "TCP" },
     { container_port = 30082, host_port = 8082, protocol = "TCP" },
-    { container_port = 30083, host_port = 8083, protocol = "TCP" }
+    { container_port = 30083, host_port = 8083, protocol = "TCP" },
+    { container_port = 30084, host_port = 8084, protocol = "TCP" },
+    { container_port = 30085, host_port = 8085, protocol = "TCP" },
+    { container_port = 30086, host_port = 8086, protocol = "TCP" }
   ]
 }
 
